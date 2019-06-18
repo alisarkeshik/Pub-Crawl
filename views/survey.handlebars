@@ -1,23 +1,23 @@
 <div class="container-fluid">
+
   <div class="row">
     <div class="col-lg-1"></div>
     <div class="col-lg-10" id="surveybox">
 
+   <a href="https://dairyquery-pubcrawl.herokuapp.com/"> <button class="btn btn-primary btn-lg homebutton" role="button">Home</button></a>
 
       <h1><img src="./images/beer-glasses-left.gif" width="50px" ;height="40px;"> Find YOUR Perfect Beer! <img
           src="./images/beer-glasses-right.gif" width="50px" ;height="40px;"></h1>
       <hr />
 
-      <h2>Name (Required)</h2>
+      <h2>Your Name: </h2>
       
 
       <input type="text" id="name" class="form-control" required />
 
 
-      <h2>Link to Photo Image (Required)
-        <input type="text" id="photo" class="form-control" required />
-      </h2>
-      <hr />
+      
+      <hr>
 
 
       <h3><strong> 1. Preferred alcohol by volume: </strong></h3><select class="chosen-select" id="q1">
@@ -182,16 +182,9 @@
   </div>
   <div class="col-lg-1"></div>
 </div>
-<div class="surveyresults">
-  <ul id="surveyresdispaly">
 
-  </ul>
-
-</div>
   <div id="hidebox">
-<div class="surverytext">
 
-</div>
 <h2 class="beerheader">Beer Matches:</h3>
   <div id="displaycontainer">
   <div class="surveyresults">
@@ -204,23 +197,24 @@
   </div>
 
 
-<!-- Modal -->
-<div class="row">
-  <div id="results-modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button class="close" data-dismiss="modal">&times;</button>
-          <h2 class="modal-title"><strong>Best Match</strong></h2>
-        </div>
-        <div class="modal-body">
-          <h2 id="match-name"></h2>
-          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"
-            alt="" />
-        </div>
-        <div class="modal-footer">
-          <a href="http://localhost:8080/beers"><button class="btn btn-default" data-dismiss="modal">Close</button></a>
+  <!-- Modal -->
+  <div class="row">
+    <div id="results-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title"><strong>Best Match</strong></h2>
+          </div>
+          <div class="modal-body">
+            <h2 id="match-name"></h2>
+            <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"
+              alt="" />
+          </div>
+          <div class="modal-footer">
+            <a href="https://dairyquery-pubcrawl.herokuapp.com/beers"><button class="btn btn-default" data-dismiss="modal">Close</button></a>
+          </div>
         </div>
       </div>
     </div>
